@@ -111,6 +111,9 @@ you may continue to use the + operator for string concatenation.
 */
 
 export function multiplyArrayWithThreeNumbers(multArr) { //eslint-disable-line
+    let num = multiply(multArr[0], multArr[1]);
+    let totalMult = multiply(num[0], multArr[2]);
+    return [totalMult[0], `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${totalMult[0]}.`];
 
 }
 
